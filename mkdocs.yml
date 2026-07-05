@@ -1,0 +1,68 @@
+# Project information
+site_name: Gent Roleplay -  wet en regelgeving
+site_url: 'https://site-sooty-gamma.vercel.app/'
+site_description: 'Wet en regelgeving van Gent Roleplay'
+site_author: 'Skaza Lopezz'
+
+# Copyright
+copyright: Copyright &copy; 2024 - 2025 Gent
+
+repo_url: 'https://github.com/Milan-08/Apv-Gent-Roleplay'
+repo_name: 'Skaza Lopezz'
+edit_uri: 'edit/pre-release/docs/'
+
+# Congiguration
+theme:
+  name: material
+#   features:
+#     - navigation.tabs
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to system preference
+  favicon: img/logo.webp
+  logo: img/logo.png
+  language: nl
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.indexes
+    - header.autohide
+    - toc.follow
+    - content.action.edit
+    - content.action.view
+  extra:
+    analytics:
+      provider: google
+      property: UA-167800475-3
+
+plugins:
+  - search:
+      lang: nl
+markdown_extensions:
+  - admonition
+  - attr_list
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - javascripts/tables.js
+nav:
+  - Home: index.md
+  - Algemene Plaatselijke Verordening: apv.md
+  - Wetboek: wetboek.md
+  - Risicogebieden: risico-gebieden.md
+  - Douanegebieden: douanegebieden.md
+  - NOTAM: notam.md
+  - Streamen op Gent: streamen.md
+  - Kosten:
+    - Advocatuur: kosten/advocatuur.md
+    - Ambulance: kosten/ambulance.md
+    - ANWB: kosten/anwb.md
+    - Politie: kosten/politie.md
+    - Vliegschool: kosten/vliegschool.md
